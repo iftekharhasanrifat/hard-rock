@@ -9,7 +9,7 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <!-- Custom css -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -50,15 +50,21 @@
                     <button onclick="searchSong()" class="btn btn-success search-btn">Search</button>
                 </div>
             </div>
+            <!-- spinner -->
+            <div id="loading-spinner" class="d-flex justify-content-center d-none">
+                <div class="spinner-border text-warning" role="status">
+                    <span class="visually-hidden"></span>
+                </div>
+            </div>
             <h3 id="error-message" class="text-center text-danger">
 
             </h3>
             <!-- Single Lyrics -->
             <div id="song-lyrics" class="single-lyrics text-center">
-                
+
             </div>
             <div id="song-container" class="search-result col-md-8 mx-auto py-4">
-                
+
             </div>
         </main>
     </div>
@@ -67,7 +73,7 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
     <!-- Custom Script Here -->
 
