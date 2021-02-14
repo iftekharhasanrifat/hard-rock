@@ -13,6 +13,7 @@ const searchSong = async() => {
 
     } catch (error) {
         displayError('Please try again later');
+        toggleSpinner();
     }
 }
 
@@ -25,6 +26,8 @@ document.getElementById('search-field').addEventListener('keypress', function(ev
 const displaySongs = songs => {
     const songContainer = document.getElementById('song-container');
     songContainer.innerHTML = '';
+    const errorMessage = document.getElementById('error-message');
+    errorMessage.innerText = '';
     songs.forEach(song => {
         console.log(song);
         const songDiv = document.createElement('div');
