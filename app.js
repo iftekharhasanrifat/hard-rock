@@ -45,8 +45,9 @@ const displaySongs = songs => {
         </div>
         `;
         songContainer.appendChild(songDiv);
-        toggleSpinner();
+
     })
+    toggleSpinner();
 }
 
 const getLyric = (artist, title) => {
